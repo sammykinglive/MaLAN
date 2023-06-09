@@ -134,16 +134,18 @@ body {
     }
   
     .text-overlay h1 {
-      font-size: 32px;
+      font-size: 26px;
     }
   
     .text-overlay p {
-      font-size: 20px;
+      font-size: 16px;
     }
   
     .logistics-icons i {
-      font-size: 24px;
+      font-size: 30px;
     }
+
+    
   }
   
   @media (max-width: 480px) {
@@ -164,6 +166,6 @@ body {
     }
   
     .logistics-icons i {
-      font-size: 35px;
+      font-size: 30px;
     }
   }
