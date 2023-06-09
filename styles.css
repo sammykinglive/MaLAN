@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Mitr', sans-serif;
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo img {
+    width: 100px;
+    display: block;
+    border-radius: 15%;
+  }
+  
+  .video-overlay {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px); /* Subtract header height from video overlay height */
+    overflow: hidden;
+  }
+  
+  .video-overlay video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .text-overlay h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    animation: fade-in 2s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .text-overlay p {
+    font-size: 24px;
+    color: #fff;
+    opacity: 0;
+    animation: fade-in 2s ease-in-out forwards;
+  }
+  
+  footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .logistics-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logistics-icons i {
+    font-size: 30px;
+    color: #241D47;
+    margin: 0 20px;
+    animation: wiggle-bounce 1.5s ease-in-out infinite;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logistics-icons i:hover {
+    transform: scale(1.2) rotate(10deg);
+  }
+  
+  @keyframes wiggle-bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
