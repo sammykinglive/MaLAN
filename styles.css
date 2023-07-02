@@ -106,39 +106,68 @@ background-color: #ffffff; /* Color of the toggle button icon */
   width: 600px;
 }
 
-.hero-content h1 {
+.text-slider {
+  margin-bottom: 20px;
+  
+}
+
+.slide {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+
+
+.slide h1 {
+  
   font-size: 3rem;
   margin-bottom: 1rem;
   font-family: 'Faster One', cursive;
 }
 
-.hero-content p {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  font-family: 'Courgette', cursive;
-  line-height: 1.2;
-  color: #2b29b7;
+
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+
+.cta-wrapper {
+  margin-top: 70px;
+  
 }
 
 .cta-button {
   display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #ffffff;
-  color: #241D47;
+  padding: 10px 20px;
+  background-color: #22a5e2;
+  color: #ffffff;
   font-size: 1.2rem;
   text-decoration: none;
   border-radius: 15px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.486);
+  transition-duration: 0.5s;
+  transition-property: background-color;
 }
 
-.cta-button .btn:hover{
-  background-color: #2e2cad;
+.cta-button:hover{
+  text-decoration: none;
+  background-color: #18cac1;
+  padding: 10px 20px;
+  color: #ffffff;
 }
 
 
 @media (max-width: 768px) {
   .hero {
-    height: 400px;
+    height: 350px;
     padding: 2rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,17 +176,30 @@ background-color: #ffffff; /* Color of the toggle button icon */
 
   .cta-button {
     
-    padding: 0.5rem 2rem;
-    
+    padding: 10px 20px;
+    background-color: white;
+    color: #241D47;
+  }
+
+  .cta-button:hover{
+    text-decoration: none;
+    background-color: #18cac1;
+    padding: 10px 20px;
+    color: #000000;
+  }
+
+  .cta-wrapper {
+    margin-top: 200px; /* Adjust the margin as desired for mobile */
   }
 
   .hero-content {
     margin-top: 2rem;
   }
 
-  .hero-content h1 {
+  .slide h1 {
     font-size: 1.8rem;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    padding: 0 20px;
   }
 
   .hero-content p {
@@ -180,16 +222,30 @@ background-color: #ffffff; /* Color of the toggle button icon */
 
   .cta-button {
     
-    padding: 1rem 3rem;
-    
+    padding: 10px 20px;
+    background-color: white;
+    color: #241D47;
+  }
+
+  .cta-button:hover{
+    text-decoration: none;
+    background-color: #18cac1;
+    padding: 10px 20px;
+    color: #000000;
+  }
+
+  .cta-wrapper {
+    margin-top: 200px; /* Adjust the margin as desired for mobile */
   }
 
   .hero-content {
     margin-top: 5rem;
   }
 
-  .hero-content h1 {
+  .slide h1 {
     font-size: 3rem;
+    margin-bottom: 50px;
+    padding: 0 20px;
   }
 
   .hero-content p {
