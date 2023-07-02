@@ -1,37 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...your-integrity-hash-here..." crossorigin="anonymous">
-    <title>Coming Soon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;0,400;0,500;1,100;1,300&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-eS5ZEZFD1KRUqpyJ1SzvECqCvGLgulcmOmX5pAp6y3RqhGxdUpM2g4Hozt8EYPvG/D8fTOJm2tnpl2oL69IZQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Malan</title>
 </head>
 <body>
-    <header>
-      <div class="logo">
-        <img src="images/Frame 15.png" alt="Logo">
-      </div>
-    </header>
+  <!-- Header -->
+
+
+
   
-    <div class="video-overlay">
-      <video autoplay muted loop>
-        <source src="videos/pexels-kindel-media-6868586-3840x2160-30fps.mp4" type="video/mp4">
-      </video>
-      <div class="text-overlay">
-        <h1>Coming Soon</h1>
-        <p>Your extraordinary logistics partner.</p>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/Group 10.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+          <a href="login.html" class="btn btn-primary">Deliver A Package</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="hero" style="background-image: url('images/hero\ 3.png')">
+    <div class="hero-content">
+      <h1>Your Extraordinary Logistics Partners</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.consectetur adipiscing elit</p>
+      <a href="#" class="cta-button">Deliver A Package</a>
+    </div>
+  </section>
+  
+  
+
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <div class="about-info">
+        <div class="about-text">
+          <h2>Who We Are <br> & What We Do</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit dolor et dolor consectetur, ac commodo ex dignissim
+                ac commodo ex dignissim.
+          </p>    
+        </div>
+        
+        <div class="product-cards">
+          <div class="product-card">
+            <div class="card-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class="card-content">
+              <h3>Fast Delivery</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card-icon">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="product-card2" >
+            <div class="card-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="card-content">
+              <h3>Secure Packaging</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card-icon">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="card-content">
+              <h3>Reliable Service</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card-icon">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-image-div">
+
+        <img src="images/about 5.jpg" alt="About Image">
       </div>
     </div>
-
-    <footer>
-      <div class="logistics-icons">
-        <i class="fas fa-truck"></i>
-        <i class="fas fa-shipping-fast"></i>
-        <i class="fas fa-box"></i>
-      </div>
-    </footer>
+  </section>
   
+  
+
+  <div class="feature-section">
+    <div class="feature feature-text">
+      <div class="text-item-1">
+        <h1>Welcome to Our Delivery Service</h1>
+      </div>
+      <div class="text-item-2">
+        <p>Get your items delivered quickly and efficiently to your doorstep!</p>
+      </div>
+    </div>
+    
+    <div class="feature feature-image">
+      <div class="image-grid">
+        <img src="images/grid 1.jpg" alt="Image 1">
+        <img src="images/grid 4.jpg" alt="Image 2">
+        <img src="images/grid 3.jpg" alt="Image 3">
+        <img src="images/grid 2.jpg" alt="Image 4">
+      </div>
+    </div>
+    
+    <div class="feature feature-stats">
+      <div class="stats-item-1">
+        <i class="fas fa-chart-bar"></i>
+      </div>
+      <div class="stats-item-2">
+        <div class="stat">
+          <i class="fas fa-users"></i>
+          <span>Over 1000 satisfied customers</span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-shipping-fast"></i>
+          <span>Fast & reliable delivery </span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-headset"></i>
+          <span>24/7 customer support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="partner-section">
+    <div class="partner-text">
+      <h1>Lets Work Together As A Partner Or A Rider</h1>
+      <p>Discover the companies we work with to provide exceptional services.</p>
+    </div>
+    <div class="partner-flex">
+      <div class="partner-item">
+        <div class="partner-image">
+          <img src="images/partner.jpg" alt="Partner Image">
+        </div>
+        <div class="partner-content">
+          <h1>Partner With Us</h1>
+          <p>Join us as a partner and collaborate for mutual success.</p>
+          <a href="#" class="partner-cta">Learn More</a>
+        </div>
+      </div>
+      <div class="partner-item">
+        <div class="partner-image">
+          <img src="images/ride.jpg" alt="Rider Image">
+        </div>
+        <div class="partner-content">
+          <h1>Ride With Us</h1>
+          <p>Join our team of riders and enjoy flexible earning opportunities.</p>
+          <a href="#" class="partner-cta">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+  <section class="testimonial-section">
+    <div class="testimonial">
+      <h1>Customer Testimonial</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit augue at felis tincidunt, vitae hendrerit mauris consectetur.</p>
+    </div>
+    
+    <div class="testimonial-group">
+      <div class="testimonial-item">
+        <div class="testimonial-image">
+          <img src="images/test img 3.jpg" alt="Testimonial 1">
+        </div>
+        <div class="testimonial-content">
+          <h3>John Doe</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        </div>
+      </div>
+      
+      <div class="testimonial-item">
+        <div class="testimonial-image">
+          <img src="images/test img 2.jpg" alt="Testimonial 2">
+        </div>
+        <div class="testimonial-content">
+          <h3>Jane Smith</h3>
+          <p>"Vestibulum pulvinar tellus at sem sollicitudin, eget tincidunt nisl maximus."</p>
+        </div>
+      </div>
+      
+      <div class="testimonial-item">
+        <div class="testimonial-image">
+          <img src="images/test img 1.jpg" alt="Testimonial 3">
+        </div>
+        <div class="testimonial-content">
+          <h3>Robert Johnson</h3>
+          <p>"Nullam hendrerit augue at felis tincidunt, vitae hendrerit mauris consectetur."
+            "Nullam hendrerit augue at felis tincidunt, vitae hendrerit mauris consectetur
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <div class="footer-item">
+        <h3>Contact Us</h3>
+        <p>Email: info@example.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Address: 123 delivery Street, City, Country</p>
+      </div>
+     
+      <div class="footer-item">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Malan Logistics|| Designed by Sammyking. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- Rest of the page content -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/viz.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
