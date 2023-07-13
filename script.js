@@ -51,3 +51,31 @@ AOS.init({
 
 
 
+
+
+
+
+
+
+
+
+// Show or hide the scroll-up button based on scroll position
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollUpBtn.style.display = "block";
+  } else {
+      scrollUpBtn.style.display = "none";
+  }
+}
+
+// Scroll to the top when the button is clicked
+document.getElementById("scrollUpBtn").addEventListener("click", function() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
