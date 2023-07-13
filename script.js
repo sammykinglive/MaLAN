@@ -33,10 +33,20 @@ const ctaButton = document.getElementById('cta-button');
 
 // Animate the background color using GSAP
 gsap.to(ctaButton, {
-  backgroundColor: "#241D47", // Final background color
+  backgroundColor: "#ffffff", // Final background color
   duration: 3, // Animation duration (in seconds)
   repeat: -1, // Repeat indefinitely
   yoyo: true, // Reverse the animation back and forth
+});
+
+
+
+
+// animate on scroll
+
+AOS.init({
+  duration: 1500, // Animation duration (in milliseconds)
+  once: true, // Animation will trigger only once
 });
 
 
