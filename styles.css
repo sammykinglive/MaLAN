@@ -132,6 +132,7 @@ background-color: #ffffff; /* Color of the toggle button icon */
   font-size: 3rem;
   margin-bottom: 1rem;
   font-family: 'Faster One', cursive;
+  color: #ffffff;
 }
 
 
@@ -200,8 +201,9 @@ background-color: #ffffff; /* Color of the toggle button icon */
   }
 
   .slide h1 {
-    font-size: 2rem;
-    margin-top: 50px;
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom:50px;
     padding: 0 20px;
   }
 
